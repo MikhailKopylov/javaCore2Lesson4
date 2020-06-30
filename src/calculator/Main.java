@@ -1,4 +1,4 @@
-package sample;
+package calculator;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -12,7 +12,7 @@ public class Main extends Application {
     public void start(Stage primaryStage) throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
         primaryStage.setTitle("MyChat");
-        primaryStage.setScene(new Scene(root, 640, 480));
+        primaryStage.setScene(new Scene(root, 640, 640));
         primaryStage.show();
     }
 

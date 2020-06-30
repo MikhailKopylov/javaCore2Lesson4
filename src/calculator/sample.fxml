@@ -1,0 +1,62 @@
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.VBox?>
+<?import java.net.URL?>
+<BorderPane fx:controller="calculator.Controller"
+            xmlns:fx="http://javafx.com/fxml" >
+
+    <stylesheets>
+        <URL value = "@/css/style.css"/>
+    </stylesheets>
+    <top>
+        <MenuBar>
+            <Menu text="File">
+                <MenuItem text="exit" onAction="#exit"/>
+            </Menu>
+
+        </MenuBar>
+    </top>
+    <center>
+       <VBox>
+           <TextField fx:id="resultTextField" editable="false" minHeight="120"
+                      focusTraversable="false" VBox.vgrow="ALWAYS"/>
+
+           <GridPane fx:id="gridPaneCalc" alignment="center" hgap="NaN" vgap="NaN" VBox.vgrow="ALWAYS">
+
+                <Button fx:id="button1" text="1" onAction="#pressButton" onKeyPressed="#pressKey"
+                        GridPane.columnIndex="0" GridPane.rowIndex="1" prefWidth="500" prefHeight="500"/>
+                <Button fx:id="button2" text="2" onAction="#pressButton" onKeyPressed="#pressKey"
+                        GridPane.columnIndex="1" GridPane.rowIndex="1" prefWidth="500" prefHeight="500" />
+                <Button fx:id="button3" text="3" onAction="#pressButton" onKeyPressed="#pressKey"
+                        GridPane.columnIndex="2" GridPane.rowIndex="1" prefWidth="500" prefHeight="500" />
+                <Button fx:id="button4" text="4" onAction="#pressButton" onKeyPressed="#pressKey"
+                        GridPane.columnIndex="0" GridPane.rowIndex="2" prefWidth="500" prefHeight="500" />
+                <Button fx:id="button5" text="5" onAction="#pressButton" onKeyPressed="#pressKey"
+                        GridPane.columnIndex="1" GridPane.rowIndex="2" prefWidth="500" prefHeight="500" />
+                <Button fx:id="button6" text="6" onAction="#pressButton" onKeyPressed="#pressKey"
+                        GridPane.columnIndex="2" GridPane.rowIndex="2" prefWidth="500" prefHeight="500" />
+                <Button fx:id="button7" text="7" onAction="#pressButton" onKeyPressed="#pressKey"
+                        GridPane.columnIndex="0" GridPane.rowIndex="3" prefWidth="500" prefHeight="500" />
+                <Button fx:id="button8" text="8" onAction="#pressButton" onKeyPressed="#pressKey"
+                        GridPane.columnIndex="1" GridPane.rowIndex="3" prefWidth="500" prefHeight="500" />
+                <Button fx:id="button9" text="9" onAction="#pressButton" onKeyPressed="#pressKey"
+                        GridPane.columnIndex="2" GridPane.rowIndex="3" prefWidth="500" prefHeight="500" />
+                <Button fx:id="button0" text="0" onAction="#pressButton" onKeyPressed="#pressKey"
+                        GridPane.columnIndex="1" GridPane.rowIndex="4" prefWidth="500" prefHeight="500" />
+                <Button fx:id="buttonEquals" text="=" onAction="#pressButton" onKeyPressed="#pressKey"
+                        GridPane.columnIndex="4" GridPane.rowIndex="4" prefWidth="500" prefHeight="500" />
+                <Button fx:id="buttonPlus" text="+" onAction="#pressButton" onKeyPressed="#pressKey"
+                        GridPane.columnIndex="4" GridPane.rowIndex="0" prefWidth="500" prefHeight="500" />
+                <Button fx:id="buttonMinus" text="-" onAction="#pressButton" onKeyPressed="#pressKey"
+                        GridPane.columnIndex="4" GridPane.rowIndex="1" prefWidth="500" prefHeight="500" />
+                <Button fx:id="buttonMultiply" text="*" onAction="#pressButton" onKeyPressed="#pressKey"
+                        GridPane.columnIndex="4" GridPane.rowIndex="2" prefWidth="500" prefHeight="500" />
+                <Button fx:id="buttonDivide" text="/" onAction="#pressButton" onKeyPressed="#pressKey"
+                        GridPane.columnIndex="4" GridPane.rowIndex="3" prefWidth="500" prefHeight="500" />
+           </GridPane>
+       </VBox>
+    </center>
+
+
+</BorderPane>

@@ -1,0 +1,16 @@
+.button{
+-fx-background-color: #effffd;
+-fx-font-size: 22px;
+}
+
+#gridPaneCalc {
+    -fx-background-color: lightgray;
+    -fx-vgap: 10;
+    -fx-hgap: 10;
+    -fx-padding: 30;
+}
+
+#resultTextField {
+    -fx-font-size: 60px;
+
+}
